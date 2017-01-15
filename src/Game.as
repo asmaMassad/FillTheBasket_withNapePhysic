@@ -300,13 +300,16 @@ package
 			
 			var bodies:BodyList=space.bodies;
 			var body:Body;
-			for (var i:int = 0; i < bodies.length; i++) {
-				body =bodies.at(i);
-				if(body.userData.sprite!=null){
-					body.userData.sprite.x=body.position.x;
-					body.userData.sprite.y=body.position.y;
-				}
+			/* ****if bodies have skin you can update them using this code****
+			for (var i:int = 0; i < bodies.length; i++) 
+			{
+			body =bodies.at(i);
+			if(body.userData.sprite!=null){
+			body.userData.sprite.x=body.position.x;
+			body.userData.sprite.y=body.position.y;
 			}
+			*/
+			
 		}
 	}
 }
